@@ -1,39 +1,38 @@
+<div class="container">
 <h1>Eat-Da-Burger!</h1>
 
-<h2>Burgers Not Devoured!</h2>
+<img src="/assets/img/8448c9b365ecf4a42aa987ff22509053-american-burger-cartoon-by-vexels.png" alt="burger" id = "burgerPic">
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-        <li data-id="{{ id }}">{{ burger_name }}</li>
-      	<button class="change-burger" data-id="{{id}}" data-newdevour="{{devour}}">DEVOUR!</button>
-    {{/unless}}
-  {{/each}}
-</ul>
+  <h2>Burgers Not Devoured!</h2>
 
-<h2>Burgers That Have Been Devoured!</h2>
+  <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+          <li data-id="{{ id }}">{{ burger_name }}
+          <br><button class="change-burger btn btn-warning" data-id="{{id}}">DEVOUR!</button></li>
+      {{/unless}}
+    {{/each}}
+  </ul>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-    <li data-id="{{ id }}">{{ burger_name }}</li>
-    {{/if}}
-  {{/each}}
-</ul>
+    <h2>Burgers That Have Been Devoured!</h2>
+
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+        <li data-id="{{ id }}" class="inline-block burgerBlock">{{ burger_name }}</li>
+        {{/if}}
+      {{/each}}
+    </ul>
+
 
 <h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
     <label for="burgerName">Burger Name:</label>
-    <input type="text" id="burgerName" name="name">
+    <input type="text" id="burgTextarea" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="slee">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Not Devoured!
-  </div>
-
-  <button type="submit">Add Burger</button>
+  <button class="btn btn-warning" type="submit" id="newBurger">ADD BURGER</buttonclass="btn btn-warning">
 </form>
+</div>
