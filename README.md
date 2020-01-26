@@ -8,7 +8,7 @@
 * [Future Commits](#future-commits)
 * [License](#license)
 ## <a name="overview"></a>Project Overview
-The Eat-Da-Burger web application showcases the MVC (Model-View-Controller) framework. Users can create "orders" of their favorite burgers which are then 
+The Eat-Da-Burger web application showcases the MVC (Model-View-Controller) framework. Users can create "orders" of their favorite burgers which are then displayed under the "Not Devoured" category. Each burger contains a "devoured" button which, when clicked, moves the burger from one column to another. This project utilizes HTML, CSS, Javascript, Node.js, Express.js, MySQL, and Express-Handlebars.
 ## <a name="live"></a>Live Link
 ## <a name="installing"></a>Using Application
 Users may run the application on the live Heroku link:
